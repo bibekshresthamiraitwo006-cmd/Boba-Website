@@ -432,5 +432,50 @@
       <p>© 2024 Bōba Luxe. All rights reserved. Crafted with love & tapioca.</p>
     </div>
   </footer>
+  
+  <script>
+    // Smooth scroll (CSS handles it, JS for burger)
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      burger.classList.toggle('active');
+    });
+
+    // Close nav on link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        burger.classList.remove('active');
+      });
+    });
+
+    // Sticky nav
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav--scrolled', window.scrollY > 60);
+    });
+
+    // Tabs
+    const tabs = document.querySelectorAll('.tab');
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.menu__grid').forEach(g => g.classList.remove('active'));
+        tab.classList.add('active');
+        document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('revealed');
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.menu-card, .stat, .testimonial, .gallery__item, .exp-feature').forEach(el => {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
 </body>
 </html>
