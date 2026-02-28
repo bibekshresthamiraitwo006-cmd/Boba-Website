@@ -173,7 +173,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--pink-500); }
 .nav {
   position: fixed;
   top: 0; left: 0; right: 0;
-  z-index: 100;
+  z-index: 9999;
   height: var(--nav-h);
   display: flex;
   align-items: center;
@@ -820,38 +820,52 @@ input:focus, select:focus, textarea:focus { border-color: var(--pink-500); }
   }
 
   /* Nav */
+  .nav {
+    z-index: 9999;
+  }
   .nav__links {
     position: fixed;
     top: 0;
-    left: 0; right: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
-    background: rgba(253,248,249,0.98);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    background: #fdf8f9;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0;
-    padding: var(--nav-h) 0 2rem;
+    padding: 0;
     transform: translateX(100%);
-    transition: transform 0.4s var(--ease);
-    z-index: 99;
+    transition: transform 0.45s cubic-bezier(0.77, 0, 0.175, 1);
+    z-index: 9998;
+    overflow: hidden;
   }
   .nav__links.open { transform: translateX(0); }
   .nav__links a {
-    display: block;
-    padding: 1.2rem var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.1rem 2rem;
     color: var(--charcoal) !important;
-    font-size: 1.5rem !important;
-    letter-spacing: 0.06em;
+    font-size: clamp(1.6rem, 6vw, 2.2rem) !important;
+    letter-spacing: 0.12em;
     font-family: var(--font-display);
+    font-weight: 300;
     text-align: center;
     border-bottom: 1px solid var(--pink-100);
     width: 100%;
+    transition: color 0.2s, background 0.2s;
   }
-  .nav__links a:hover { color: var(--pink-500) !important; }
-  .nav__burger { display: flex; z-index: 200; }
-  .nav__logo { font-size: 1.3rem; }
+  .nav__links a:first-child { border-top: 1px solid var(--pink-100); }
+  .nav__links a:hover {
+    color: var(--pink-500) !important;
+    background: var(--pink-50);
+  }
+  .nav__burger { display: flex; z-index: 10000; position: relative; }
+  .nav__logo { font-size: 1.3rem; position: relative; z-index: 10000; }
 
   /* Hero */
   .hero__subtitle br { display: none; }
