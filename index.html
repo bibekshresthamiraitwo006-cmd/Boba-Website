@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bōba Luxe — Artisan Bubble Tea</title>
+  <title>Boba Luxe - Artisan Bubble Tea</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-
   <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="#" class="nav__logo">Bōba Luxe</a>
+    <a href="#hero" class="nav__logo">Boba Luxe</a>
     <ul class="nav__links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#menu">Menu</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -28,17 +28,17 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__bg">
-      <img 
-        src="https://images.unsplash.com/photo-1558857563-c0c3945a6f9c?w=1800&q=80&auto=format&fit=crop" 
-        alt="Boba Tea"
+      <img
+        src="asset/images/hero scetion boba.jpg"
+        alt="Luxury Boba Tea"
         loading="eager"
         referrerpolicy="no-referrer"
-        onerror="this.style.display='none'"
+        id="heroImg"
       >
       <div class="hero__overlay"></div>
     </div>
     <div class="hero__content">
-      <span class="hero__eyebrow">Est. 2024 · Artisan Crafted</span>
+      <span class="hero__eyebrow">Est. 2024 &middot; Artisan Crafted</span>
       <h1 class="hero__title">Every Sip<br><em>A Story</em></h1>
       <p class="hero__subtitle">Handcrafted bubble tea born from tradition,<br>elevated for the connoisseur.</p>
       <div class="hero__cta">
@@ -55,18 +55,18 @@
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee__track">
-      <span>Artisan Teas</span><span>✦</span>
-      <span>Freshly Crafted</span><span>✦</span>
-      <span>Handpicked Pearls</span><span>✦</span>
-      <span>Premium Milk Tea</span><span>✦</span>
-      <span>Taro Dreams</span><span>✦</span>
-      <span>Rose Gold Latte</span><span>✦</span>
-      <span>Artisan Teas</span><span>✦</span>
-      <span>Freshly Crafted</span><span>✦</span>
-      <span>Handpicked Pearls</span><span>✦</span>
-      <span>Premium Milk Tea</span><span>✦</span>
-      <span>Taro Dreams</span><span>✦</span>
-      <span>Rose Gold Latte</span><span>✦</span>
+      <span>Artisan Teas</span><span>&#10022;</span>
+      <span>Freshly Crafted</span><span>&#10022;</span>
+      <span>Handpicked Pearls</span><span>&#10022;</span>
+      <span>Premium Milk Tea</span><span>&#10022;</span>
+      <span>Taro Dreams</span><span>&#10022;</span>
+      <span>Rose Gold Latte</span><span>&#10022;</span>
+      <span>Artisan Teas</span><span>&#10022;</span>
+      <span>Freshly Crafted</span><span>&#10022;</span>
+      <span>Handpicked Pearls</span><span>&#10022;</span>
+      <span>Premium Milk Tea</span><span>&#10022;</span>
+      <span>Taro Dreams</span><span>&#10022;</span>
+      <span>Rose Gold Latte</span><span>&#10022;</span>
     </div>
   </div>
 
@@ -74,7 +74,11 @@
   <section class="about section" id="about">
     <div class="container about__grid">
       <div class="about__image-wrap">
-        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80&auto=format&fit=crop" alt="Tea preparation" class="about__img" referrerpolicy="no-referrer" onerror="this.parentElement.style.background='linear-gradient(135deg,#fce7f3,#dbeafe)'">
+        <img
+          src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=800&q=80&auto=format&fit=crop"
+          alt="Tea preparation"
+          referrerpolicy="no-referrer"
+        >
         <div class="about__badge">
           <span class="about__badge-num">100%</span>
           <span class="about__badge-text">Natural Ingredients</span>
@@ -83,7 +87,7 @@
       <div class="about__text">
         <span class="section__label">Our Philosophy</span>
         <h2 class="section__title">Where Ritual<br>Meets <em>Artistry</em></h2>
-        <p>At Bōba Luxe, we believe bubble tea is more than a drink—it's a ceremony. We source the finest Taiwanese teas, steep them to perfection, and pair them with handmade tapioca pearls cooked fresh every two hours.</p>
+        <p>At Boba Luxe, we believe bubble tea is more than a drink - it's a ceremony. We source the finest Taiwanese teas, steep them to perfection, and pair them with handmade tapioca pearls cooked fresh every two hours.</p>
         <p>Our recipes blend centuries of tea tradition with modern, refined sensibility. Each cup is a dialogue between the ancient and the contemporary.</p>
         <a href="#menu" class="btn btn--primary">Discover Our Teas</a>
       </div>
@@ -106,7 +110,7 @@
         <span class="stat__label">Happy Guests</span>
       </div>
       <div class="stat">
-        <span class="stat__num">∞</span>
+        <span class="stat__num">&#8734;</span>
         <span class="stat__label">Customizations</span>
       </div>
     </div>
@@ -118,20 +122,18 @@
       <div class="section__header">
         <span class="section__label">The Collection</span>
         <h2 class="section__title">Our Signature <em>Creations</em></h2>
-        <p class="section__desc">Each drink is a masterpiece—layered, balanced, and crafted with intention.</p>
+        <p class="section__desc">Each drink is a masterpiece - layered, balanced, and crafted with intention.</p>
       </div>
-
       <div class="menu__tabs">
         <button class="tab active" data-tab="milk">Milk Teas</button>
         <button class="tab" data-tab="fruit">Fruit Teas</button>
         <button class="tab" data-tab="special">Specials</button>
       </div>
 
-      <!-- Milk Teas -->
       <div class="menu__grid active" id="tab-milk">
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Classic Pearl Milk Tea">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop" alt="Classic Pearl Milk Tea" referrerpolicy="no-referrer">
             <span class="menu-card__tag">Bestseller</span>
           </div>
           <div class="menu-card__body">
@@ -139,13 +141,13 @@
             <p>Silky Taiwanese black tea meets luscious milk and our signature honey pearls.</p>
             <div class="menu-card__footer">
               <span class="price">$6.50</span>
-              <span class="menu-card__dots">✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card menu-card--featured">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop" alt="Taro Bliss">
+            <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=600&auto=format&fit=crop" alt="Taro Bliss" referrerpolicy="no-referrer">
             <span class="menu-card__tag">Fan Favourite</span>
           </div>
           <div class="menu-card__body">
@@ -153,13 +155,13 @@
             <p>Dreamy purple taro swirled with coconut cream and chewy tapioca. Pure elegance.</p>
             <div class="menu-card__footer">
               <span class="price">$7.50</span>
-              <span class="menu-card__dots">✦✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&auto=format&fit=crop" alt="Matcha Rose Latte">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?w=600&auto=format&fit=crop" alt="Matcha Rose Latte" referrerpolicy="no-referrer">
             <span class="menu-card__tag">New</span>
           </div>
           <div class="menu-card__body">
@@ -167,61 +169,59 @@
             <p>Ceremonial grade matcha kissed with rose syrup and oat milk. Poetic in every sip.</p>
             <div class="menu-card__footer">
               <span class="price">$8.00</span>
-              <span class="menu-card__dots">✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Fruit Teas -->
       <div class="menu__grid" id="tab-fruit">
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop" alt="Lychee Bloom">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&auto=format&fit=crop" alt="Lychee Bloom" referrerpolicy="no-referrer">
           </div>
           <div class="menu-card__body">
             <h3>Lychee Bloom</h3>
             <p>White peach tea, lychee jelly, and floral notes that transport you to a garden.</p>
             <div class="menu-card__footer">
               <span class="price">$7.00</span>
-              <span class="menu-card__dots">✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card menu-card--featured">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop" alt="Strawberry Hibiscus">
+            <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop" alt="Strawberry Hibiscus" referrerpolicy="no-referrer">
             <span class="menu-card__tag">Summer Pick</span>
           </div>
           <div class="menu-card__body">
             <h3>Strawberry Hibiscus</h3>
-            <p>Ruby hibiscus tea layered with fresh strawberry purée and basil seeds.</p>
+            <p>Ruby hibiscus tea layered with fresh strawberry puree and basil seeds.</p>
             <div class="menu-card__footer">
               <span class="price">$7.50</span>
-              <span class="menu-card__dots">✦✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&auto=format&fit=crop" alt="Passion Mango">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=600&auto=format&fit=crop" alt="Passion Mango" referrerpolicy="no-referrer">
           </div>
           <div class="menu-card__body">
             <h3>Passion Mango</h3>
-            <p>Tropical passion fruit and Alphonso mango with aloe vera — a golden elixir.</p>
+            <p>Tropical passion fruit and Alphonso mango with aloe vera - a golden elixir.</p>
             <div class="menu-card__footer">
               <span class="price">$7.00</span>
-              <span class="menu-card__dots">✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Specials -->
       <div class="menu__grid" id="tab-special">
         <div class="menu-card menu-card--featured">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&auto=format&fit=crop" alt="Pink Sakura Dream">
+            <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&auto=format&fit=crop" alt="Pink Sakura Dream" referrerpolicy="no-referrer">
             <span class="menu-card__tag">Seasonal</span>
           </div>
           <div class="menu-card__body">
@@ -229,33 +229,33 @@
             <p>Rare cherry blossom tea, pink lychee pearls, and sakura syrup. Pure poetry.</p>
             <div class="menu-card__footer">
               <span class="price">$9.50</span>
-              <span class="menu-card__dots">✦✦✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&auto=format&fit=crop" alt="Blue Butterfly Pea">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&auto=format&fit=crop" alt="Blue Butterfly Pea" referrerpolicy="no-referrer">
           </div>
           <div class="menu-card__body">
             <h3>Blue Butterfly Pea</h3>
             <p>Magical colour-changing butterfly pea tea that blooms from indigo to violet.</p>
             <div class="menu-card__footer">
               <span class="price">$8.50</span>
-              <span class="menu-card__dots">✦✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
         <div class="menu-card">
           <div class="menu-card__img-wrap">
-            <img src="https://images.unsplash.com/photo-1521302200778-33500795e128?w=600&auto=format&fit=crop" alt="Rose Gold Oolong">
+            <img src="https://images.unsplash.com/photo-1521302200778-33500795e128?w=600&auto=format&fit=crop" alt="Rose Gold Oolong" referrerpolicy="no-referrer">
           </div>
           <div class="menu-card__body">
             <h3>Rose Gold Oolong</h3>
             <p>High mountain oolong with dried rose buds and gold luster pearls. Unforgettable.</p>
             <div class="menu-card__footer">
               <span class="price">$9.00</span>
-              <span class="menu-card__dots">✦✦✦✦</span>
+              <span class="menu-card__dots">&#10022;&#10022;&#10022;&#10022;</span>
             </div>
           </div>
         </div>
@@ -266,30 +266,18 @@
   <!-- EXPERIENCE -->
   <section class="experience section" id="experience">
     <div class="experience__bg">
-      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop" alt="Boba Experience">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop" alt="Boba Experience" referrerpolicy="no-referrer">
       <div class="experience__overlay"></div>
     </div>
     <div class="container experience__content">
       <span class="section__label section__label--light">The Space</span>
       <h2 class="section__title section__title--light">A Sanctuary<br>For <em>Tea Lovers</em></h2>
-      <p>Step into a world where every detail is curated—from the ambient lighting to the hand-thrown ceramic cups. Our lounge is designed to slow you down, breathe you in, and hold you gently.</p>
+      <p>Step into a world where every detail is curated - from the ambient lighting to the hand-thrown ceramic cups. Our lounge is designed to slow you down, breathe you in, and hold you gently.</p>
       <div class="experience__features">
-        <div class="exp-feature">
-          <span class="exp-feature__icon">✦</span>
-          <span>Private Tea Ceremonies</span>
-        </div>
-        <div class="exp-feature">
-          <span class="exp-feature__icon">✦</span>
-          <span>Custom Blending Bar</span>
-        </div>
-        <div class="exp-feature">
-          <span class="exp-feature__icon">✦</span>
-          <span>Seasonal Menus</span>
-        </div>
-        <div class="exp-feature">
-          <span class="exp-feature__icon">✦</span>
-          <span>Gift Collections</span>
-        </div>
+        <div class="exp-feature"><span class="exp-feature__icon">&#10022;</span><span>Private Tea Ceremonies</span></div>
+        <div class="exp-feature"><span class="exp-feature__icon">&#10022;</span><span>Custom Blending Bar</span></div>
+        <div class="exp-feature"><span class="exp-feature__icon">&#10022;</span><span>Seasonal Menus</span></div>
+        <div class="exp-feature"><span class="exp-feature__icon">&#10022;</span><span>Gift Collections</span></div>
       </div>
     </div>
   </section>
@@ -304,19 +292,19 @@
     </div>
     <div class="gallery__grid">
       <div class="gallery__item gallery__item--tall">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80" alt="Boba close up">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80&auto=format&fit=crop" alt="Boba close up" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item">
-        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600&auto=format&fit=crop&q=80" alt="Tea pour">
+        <img src="https://images.unsplash.com/photo-1546173159-315724a31696?w=600&q=80&auto=format&fit=crop" alt="Tea pour" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item">
-        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&auto=format&fit=crop&q=80" alt="Ingredients">
+        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=600&q=80&auto=format&fit=crop" alt="Ingredients" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item gallery__item--wide">
-        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=900&auto=format&fit=crop&q=80" alt="Cafe space">
+        <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=900&q=80&auto=format&fit=crop" alt="Cafe space" referrerpolicy="no-referrer">
       </div>
       <div class="gallery__item">
-        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&auto=format&fit=crop&q=80" alt="Coffee preparation">
+        <img src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&auto=format&fit=crop" alt="Drinks" referrerpolicy="no-referrer">
       </div>
     </div>
   </section>
@@ -330,19 +318,19 @@
       </div>
       <div class="testimonials__grid">
         <div class="testimonial">
-          <div class="testimonial__stars">★★★★★</div>
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p>"The Taro Bliss changed my entire understanding of bubble tea. Transcendent. I come every single week."</p>
-          <span class="testimonial__author">— Amélie Chen</span>
+          <span class="testimonial__author">- Amelie Chen</span>
         </div>
         <div class="testimonial testimonial--featured">
-          <div class="testimonial__stars">★★★★★</div>
-          <p>"Bōba Luxe isn't just a tea shop—it's an entire sensory experience. The Blue Butterfly Pea tea felt like drinking magic."</p>
-          <span class="testimonial__author">— James Whitmore</span>
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p>"Boba Luxe is not just a tea shop - it is an entire sensory experience. The Blue Butterfly Pea tea felt like drinking magic."</p>
+          <span class="testimonial__author">- James Whitmore</span>
         </div>
         <div class="testimonial">
-          <div class="testimonial__stars">★★★★★</div>
+          <div class="testimonial__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
           <p>"I've travelled to Taiwan and nothing compares to what they create here. The care and precision is evident in every sip."</p>
-          <span class="testimonial__author">— Priya Sharma</span>
+          <span class="testimonial__author">- Priya Sharma</span>
         </div>
       </div>
     </div>
@@ -356,30 +344,30 @@
         <h2 class="section__title">Come, <em>Sip</em>,<br>Stay Awhile</h2>
         <div class="contact__details">
           <div class="contact__item">
-            <span class="contact__icon">⊕</span>
+            <span class="contact__icon">&#8853;</span>
             <div>
               <strong>Location</strong>
               <p>12 Petal Lane, Bloom District<br>New York, NY 10001</p>
             </div>
           </div>
           <div class="contact__item">
-            <span class="contact__icon">◷</span>
+            <span class="contact__icon">&#9719;</span>
             <div>
               <strong>Hours</strong>
-              <p>Mon – Fri: 9am – 9pm<br>Sat – Sun: 10am – 10pm</p>
+              <p>Mon - Fri: 9am - 9pm<br>Sat - Sun: 10am - 10pm</p>
             </div>
           </div>
           <div class="contact__item">
-            <span class="contact__icon">✉</span>
+            <span class="contact__icon">&#9993;</span>
             <div>
               <strong>Contact</strong>
-              <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee868b828281ae8c818c8f829b968bc08d8183">[email&#160;protected]</a><br>+1 (212) 555-0188</p>
+              <p>hello@bobaluxe.com<br>+1 (212) 555-0188</p>
             </div>
           </div>
         </div>
       </div>
       <div class="contact__form-wrap">
-        <form class="contact__form">
+        <form class="contact__form" onsubmit="return false;">
           <h3>Reserve Your Table</h3>
           <div class="form__group">
             <input type="text" placeholder="Your Name" required>
@@ -396,7 +384,7 @@
                 <option value="">Guests</option>
                 <option>1 Guest</option>
                 <option>2 Guests</option>
-                <option>3–4 Guests</option>
+                <option>3-4 Guests</option>
                 <option>5+ Guests</option>
               </select>
             </div>
@@ -414,12 +402,13 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="footer__logo">Bōba Luxe</span>
+        <span class="footer__logo">Boba Luxe</span>
         <p>Handcrafted bubble tea for the discerning palate. Every cup, a ceremony.</p>
       </div>
       <div class="footer__links">
         <h4>Navigate</h4>
         <ul>
+          <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#menu">Menu</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -436,45 +425,69 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>© 2024 Bōba Luxe. All rights reserved. Crafted with love & tapioca.</p>
+      <p>&#169; 2024 Boba Luxe. All rights reserved. Crafted with love and tapioca.</p>
     </div>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    // Smooth scroll (CSS handles it, JS for burger)
-    const burger = document.getElementById('burger');
-    const navLinks = document.getElementById('navLinks');
-    burger.addEventListener('click', () => {
+  <script>
+    // Burger menu
+    var burger = document.getElementById('burger');
+    var navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', function() {
       navLinks.classList.toggle('open');
       burger.classList.toggle('active');
     });
-
-    // Close nav on link click
-    navLinks.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
+    navLinks.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
         navLinks.classList.remove('open');
         burger.classList.remove('active');
       });
     });
 
     // Sticky nav
-    const navEl = document.getElementById('nav');
+    var navEl = document.getElementById('nav');
     function updateNav() {
       navEl.classList.toggle('nav--scrolled', window.scrollY > 60);
     }
     window.addEventListener('scroll', updateNav, { passive: true });
-    updateNav(); // run on load
+    updateNav();
+
+    // Active nav link
+    var sections = document.querySelectorAll('[id]');
+    var navAnchors = document.querySelectorAll('.nav__links a');
+    window.addEventListener('scroll', function() {
+      var pos = window.scrollY + 100;
+      sections.forEach(function(sec) {
+        if (pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight) {
+          navAnchors.forEach(function(a) { a.classList.remove('active-link'); });
+          var link = document.querySelector('.nav__links a[href="#' + sec.id + '"]');
+          if (link) link.classList.add('active-link');
+        }
+      });
+    }, { passive: true });
 
     // Tabs
-    const tabs = document.querySelectorAll('.tab');
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.menu__grid').forEach(g => g.classList.remove('active'));
+    var tabs = document.querySelectorAll('.tab');
+    tabs.forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        tabs.forEach(function(t) { t.classList.remove('active'); });
+        document.querySelectorAll('.menu__grid').forEach(function(g) { g.classList.remove('active'); });
         tab.classList.add('active');
         document.getElementById('tab-' + tab.dataset.tab).classList.add('active');
       });
     });
-</script>
+
+    // Scroll reveal
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('revealed'); }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.menu-card, .stat, .testimonial, .gallery__item, .exp-feature, .about__image-wrap, .about__text').forEach(function(el) {
+      el.classList.add('reveal');
+      observer.observe(el);
+    });
+  </script>
+
 </body>
 </html>
